@@ -92,6 +92,10 @@ class BaseBallGameClass {
                 print("숫자 3개를 입력해주세요.")
                 continue
             }
+            guard Set(numbers).count == 3 else {
+                print("각각 다른 숫자를 입력해주세요.")
+                continue
+            }
 
             // strike와 ball 변수 초기화
             var strike = 0
